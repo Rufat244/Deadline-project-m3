@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="Asset 1@3x 1.png" alt="logo">
+        <a id="first" href="#"><b>BANK</b></a>
+        <a href="#"><b>BUSINESS</b></a>
+        <a href="#"><b>INVESTMENTS</b></a>
+        <a href="#"><b>INSURANCE</b></a>
+        <a href="#"><b>MOBILE</b></a>
+        <a href="#"><b>TRAVEL</b></a>
+        <a href="#"><b>ENTERTAINMENT</b></a>
+        <button>LOG IN</button>
+    </div>
+    <h1>Online Currency Converter</h1>
+    <div class="container">
+        <div class="main">
+            <div class="form-group">
+                <label for="amount">
+                    Enter Amount:
+                </label>
+                <input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">From</span>
+                        </div>
+                        <select class="form-control from" id="sel1">
+                            <option value=""> Choose currency …</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">To</span>
+                        </div>
+                        <select class="form-control to" id="sel2">
+                            <option value=""> Choose currency …</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+
+                <button class="btn btn-primary convert m-3" type="submit">
+                    Change
+                </button>
+                <button class="btn btn-primary m-3" onclick="clearVal()">
+                    Refresh
+                </button>
+            </div>
+        </div>
+        <div id="finalAmount" class="text-center">
+            <h2>Yekun Mebleg:
+                <span class="finalValue" style="color:rgb(0, 0, 0);">
+                </span>
+            </h2>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
